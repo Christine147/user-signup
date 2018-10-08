@@ -86,7 +86,7 @@ def verify_signup():
         verify = ''
 
     if not password_error and not verify_error:
-        if password != verify
+        if password != verify:
           password_error = "Passwords must match."
           verify_error = "Passwords must match."
           passwprd = ''
