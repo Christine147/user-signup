@@ -89,7 +89,7 @@ def verify_signup():
         if password != verify:
           password_error = "Passwords must match."
           verify_error = "Passwords must match."
-          passwprd = ''
+          password = ''
           verify = ''
 
     if blank(email):
@@ -115,10 +115,10 @@ def verify_signup():
             return render_template('Index.html', username_error=username_error, username=username, password_error=password_error, verify_error=verify_error, email_error=email_error, email=email)
       
 
-    @app.route('/welcome')
-    def welcome():
+    @app.route('/Welcome')
+    def Welcome():
         username = request.args.get('username')
-        return render_template('welcome.html', username=username)
+        return render_template('Welcome.html', username=username)
 
     if __name__ == "__main__":
-    app.run()
+      app.run()
