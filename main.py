@@ -113,7 +113,7 @@ def verify_signup():
             return redirect('/welcome?username={0}'.format(username))
         else:
             return render_template('Index.html', username_error=username_error, username=username, password_error=password_error, verify_error=verify_error, email_error=email_error, email=email)
-      
+    #hello  
 
     @app.route('/Welcome')
     def Welcome():
