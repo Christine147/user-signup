@@ -102,7 +102,7 @@ def verify_signup():
                 email_error = "Email must contain an @ sign"
             
             if not dot_in_email(email):
-                email_error = "Email musst contain a ."
+                email_error = "Email must contain a ."
 
         else:
             email_error = ''
@@ -120,5 +120,5 @@ def verify_signup():
         username = request.args.get('username')
         return render_template('Welcome.html', username=username)
 
-    if __name__ == "__main__":
-      app.run()
+    if __name__ == '__main__':
+        app.run()
