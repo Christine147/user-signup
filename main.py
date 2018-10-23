@@ -50,7 +50,7 @@ def verify():
         return render_template('Welcome.html', username = username)
     else:
         return render_template('Index.html', username_error=username_error, password_error=password_error, verify_error=verify_error, email_error=email_error, email=email)
-    #hello  
+    #hello  #goodbye
 
     @app.route('/Welcome')
     def Welcome():
